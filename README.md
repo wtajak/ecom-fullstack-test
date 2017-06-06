@@ -1,2 +1,2 @@
-# ecom-fullstack-test
-Photobox Full Stack JS Test
+# Photobox Full Stack JS test
+

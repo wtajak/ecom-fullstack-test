@@ -1,0 +1,16 @@
+{
+  "name": "ecom-fullstack-test",
+  "description": "Photobox Full Stack JS test",
+  "license": "GPL-3.0",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/photobox/ecom-fullstack-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/photobox/ecom-fullstack-test/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
