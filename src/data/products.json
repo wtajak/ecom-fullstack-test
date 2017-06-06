@@ -1,0 +1,29 @@
+[{
+    "title": "Simple Canvas",
+    "description": "Lets your pictures speak for themselves.",
+    "price": 1500,
+    "currency": "£",
+    "priceLabel": "From",
+    "productLabel": "bestseller"
+}, {
+    "title": "Collage Canvas",
+    "description": "Can't choose just one pic? Put your favourite photos on one canvas - a collage.",
+    "price": 2500,
+    "currency": "£",
+    "priceLabel": "From",
+    "productLabel": ""
+}, {
+    "title": "Retro Canvas",
+    "description": "A cool vintage look. For people. Places. And spaces.",
+    "price": 500,
+    "currency": "£",
+    "priceLabel": "From",
+    "productLabel": ""
+}, {
+    "title": "Desk Canvas",
+    "description": "Our smallest canvas for your big moments.",
+    "price": 1250,
+    "currency": "£",
+    "priceLabel": "From",
+    "productLabel": ""
+}]

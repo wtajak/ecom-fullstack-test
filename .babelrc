@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        "*.scss",
+        "/node_modules/"
+    ],
+    "presets": [
+        "latest",
+        "react"
+    ],
+    "plugins": [
+        [ "babel-plugin-webpack-alias", { "config": "./src/config/webpack.config.base.babel.js" } ]
+    ]
+}
