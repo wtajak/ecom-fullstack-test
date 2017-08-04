@@ -13,9 +13,9 @@ This is what a single product card should look like:
 ![listing page product card example](/src/images/design.png)
 
 Behaviour of product cards at differen't breakpoints:
-- Mobile (> 320px screen < 480px): one product card per row
-- Tablet (> 480 px screen < 768 px): two product cards per row
-- Desktop (> 768 px): three product cards per row
+- Mobile (320px > screen < 480px): one product card per row
+- Tablet (480px > screen < 768px): two product cards per row
+- Desktop (768 px > screen < inf): three product cards per row
 
 The product cards should be contained within 1024px and be aligned in the centre.
 
