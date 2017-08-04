@@ -2,7 +2,7 @@
 
 This test is designed for potential full stack developers to demonstrate their coding skills. It's intended to be done in less than 90 minutes. We're mainly interested in seeing how you approach this problem and how far you'll get.
 
-The test does not have any intentional bugs. So if you do find any, you can relay them back to us.
+The test does not have any intentional bugs. So if you do find any, you can relay them back to us. Start by creating a fork, add your changes and send us a link back to your work.
 
 ## Deliverable
 
