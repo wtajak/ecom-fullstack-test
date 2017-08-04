@@ -2,7 +2,9 @@
 
 This test is designed for potential full stack developers to demonstrate their coding skills. It's intended to be done in less than 90 minutes. We're mainly interested in seeing how you approach this problem and how far you'll get.
 
-### Deliverable
+The test does not have any intentional bugs. So if you do find any, you can relay them back to us.
+
+## Deliverable
 
 Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder).
 
