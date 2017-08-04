@@ -20,13 +20,13 @@ yarn install
 # Run website in dev (hot reload) mode ( http://localhost:3000 )
 yarn dev
 
-# Serve the production build ( http://localhost:3000 )
-yarn prod
+# Run the unit tests
+yarn test
 ```
 
 ## Other useful commands
 ``` bash
-# Run tests
+# Run unit tests
 yarn test
 
 # Create a development build
