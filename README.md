@@ -10,7 +10,7 @@ Please return at minimum a couple of components and some tests using `jest`. Fee
 
 We're mainly interested in seeing how you approach this problem and how far you'll get. This is what a single product card should look like:
 
-![listing page product card example](/src/images/design.jpg)
+![listing page product card example](/src/images/design.png)
 
 Behaviour of product cards at differen't breakpoints:
 Mobile (> 320px screen < 480px)
