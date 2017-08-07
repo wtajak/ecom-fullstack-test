@@ -21,7 +21,7 @@ Behaviour of product cards at differen't breakpoints:
 
 The product cards should be contained within 1024px and be aligned in the centre.
 
-If the user types in any other URL, it should return a basic 404 page. Keep it stateless, if possible. If you want to impress, change express to koa in the application.
+If the user types in any other URL, it should return a basic 404 page. Keep it stateless, if possible. Don't use global.scss, if you don't have to. If you want to impress, change express to koa in the application.
 
 ## Main commands
 ``` bash
