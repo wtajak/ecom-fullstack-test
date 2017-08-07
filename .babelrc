@@ -8,6 +8,8 @@
         "react"
     ],
     "plugins": [
-        [ "babel-plugin-webpack-alias", { "config": "./src/config/webpack.config.base.babel.js" } ]
+        "transform-regenerator",
+        "transform-object-rest-spread",
+        "transform-class-properties"
     ]
 }
