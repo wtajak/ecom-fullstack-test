@@ -6,7 +6,7 @@ The test does not have any intentional bugs. So if you do find any, you can rela
 
 ## Deliverable
 
-Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder).
+Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder). Tip: The prices have had their decimal indicator removed. :)
 
 Please return at minimum a component and a test using `jest`. Feel free to import any modules that you feel you require or make any changes you deem necesary.
 
@@ -21,7 +21,7 @@ Behaviour of product cards at differen't breakpoints:
 
 The product cards should be contained within 1024px and be aligned in the centre.
 
-If the user types in any other URL, it should return a basic 404 page. If you want to impress, change express to koa in the application.
+If the user types in any other URL, it should return a basic 404 page. Keep it stateless, if possible. If you want to impress, change express to koa in the application.
 
 ## Main commands
 ``` bash
