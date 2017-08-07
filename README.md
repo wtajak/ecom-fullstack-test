@@ -8,7 +8,7 @@ The test does not have any intentional bugs. So if you do find any, you can rela
 
 Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder).
 
-Please return at minimum a component, a test using `jest`. Feel free to import any modules that you feel you require or make any changes you deem necesary.
+Please return at minimum a component and a test using `jest`. Feel free to import any modules that you feel you require or make any changes you deem necesary.
 
 This is what a single product card should look like:
 
