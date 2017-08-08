@@ -1,12 +1,12 @@
 # Photobox Full Stack JS test
 
-This test is designed for potential full stack developers to demonstrate their coding skills. It's intended to be done in less than 90 minutes. We're mainly interested in seeing how you approach this problem and how far you'll get.
+This test is designed for potential full stack developers to demonstrate their coding skills. It's intended to be done in less than 90 minutes, but don't hold back in showing your skills. We're mainly interested in seeing how you approach this problem and how far you'll get.
 
 The test does not have any intentional bugs. So if you do find any, you can relay them back to us. Start by creating a fork, add your changes and send us a link back to your work.
 
 ## Deliverable
 
-Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder). Tip: The prices have had their decimal indicator removed. :)
+Your task is to create part of a listing page for the products that you receive from an API. The data for the listing page can be accessed via `/api/products` (see. /api folder). Tip: Where are the decimal indicators for the prices! :)
 
 Please return at minimum a component and a test using `jest`. Feel free to import any modules that you feel you require or make any changes you deem necesary.
 
