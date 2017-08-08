@@ -1,5 +1,3 @@
-<%= htmlWebpackPlugin.options.genFileText %>
-
 {{#if style}}
     <% for (var index in htmlWebpackPlugin.files.css) { %>
         <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[index] %>" />

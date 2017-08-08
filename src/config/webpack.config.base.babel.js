@@ -57,8 +57,7 @@ export default {
         new HtmlWebpackPlugin({
             filename: '../src/views/layout/partials/embeds.hbs',
             template: 'src/views/layout/partials/embeds.template.html',
-            inject: false,
-            genFileText: '<!-- This is a generated file -->'
+            inject: false
         }),
         new OfflinePlugin()
     ],
