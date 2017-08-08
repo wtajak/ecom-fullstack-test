@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/listingPage.scss';
 
 const HomePage = () => {
     return (

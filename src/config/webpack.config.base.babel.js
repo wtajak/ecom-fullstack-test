@@ -11,8 +11,7 @@ export default {
             'react-dom',
             'react-router'
         ],
-        'client': path.resolve(__dirname, '../init/', 'client.js'),
-        'main': path.resolve(__dirname, '../stylesheets', 'global.scss')
+        'client': path.resolve(__dirname, '../init/', 'client.js')
     },
 
     output: {
