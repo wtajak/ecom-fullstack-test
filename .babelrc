@@ -4,7 +4,7 @@
         "/node_modules/"
     ],
     "presets": [
-        "2015",
+        "es2015",
         "react"
     ],
     "plugins": [
