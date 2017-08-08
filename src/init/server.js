@@ -1,14 +1,11 @@
 import React from 'react';
 import path from 'path';
-import fs from 'fs';
 import express from 'express';
 import compression from 'compression';
 import staticAsset from 'static-asset';
 import zLib from 'zlib';
 import handlebars  from 'express-handlebars';
 import nodeJsx from 'node-jsx';
-import morgan from 'morgan';
-import helmet from 'helmet';
 import { match, RouterContext } from 'react-router';
 import { renderToString } from 'react-dom/server';
 
@@ -39,23 +36,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 /**
- * Setting up the logger
- * */
-const accessLogStream = fs.createWriteStream((() => {
-    try {
-        fs.mkdirSync(path.join(__dirname, '../../logs/'));
-    } catch(e) {
-        if ( e.code != 'EEXIST' ) throw e;
-    }
-
-    return path.join(__dirname, `../../logs/access_${(new Date()).toISOString()}.log`);
-})(), { flags: 'a' });
-
-app.use(morgan('combined', {
-    stream: accessLogStream
-}));
-
-/**
  * Transpile Jsx from node.
  * */
 nodeJsx.install();
@@ -75,23 +55,14 @@ app.use('/dist', staticAsset(path.resolve(__dirname, '../../dist/'), { maxAge: O
 app.use('/dist', express.static(path.resolve(__dirname, '../../dist/'), { maxAge: ONE_YEAR_IN_MILLIS }));
 
 /**
- * Set some security related header details
- * */
-app.use(helmet());
-
-/**
- * Making it easier for our app to find the views
- * */
-app.set('views', path.resolve(__dirname, '../views/layout/'));
-
-/**
- * View engine
+ * View engine Handlebars
  * */
 app.set('view engine', 'hbs');
 app.engine('hbs', handlebars({
     extname:'.hbs',
     partialsDir: path.resolve(__dirname, '../views/layout/partials')
 }));
+app.set('views', path.resolve(__dirname, '../views/layout/'));
 
 /**
  * Bind the APIs
@@ -114,7 +85,4 @@ app.get('*', (req, res) => {
     });
 });
 
-/**
- * Run app at port
- * */
 app.listen(APP_PORT_NUM, () => console.log(`Server running at http://localhost:${APP_PORT_NUM}`));
