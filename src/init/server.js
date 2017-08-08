@@ -10,7 +10,7 @@ import { match, RouterContext } from 'react-router';
 import { renderToString } from 'react-dom/server';
 
 import api from '../api';
-import routes from '../router';
+import routes from '../routes';
 
 const ONE_YEAR_IN_MILLIS = 31557600000;
 const APP_PORT_NUM = process.env.PORT || 3000;
