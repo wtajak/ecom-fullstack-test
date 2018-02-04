@@ -1,4 +1,8 @@
-[{
+import React from 'react';
+import { shallow } from 'enzyme';
+import ListingPage from './ListingPage';
+
+const products = [{
     "id": "p1",
     "title": "Simple Canvas",
     "description": "Lets your pictures speak for themselves.",
@@ -54,4 +58,29 @@
     "productLabel": "",
     "cta": "Shop Now",
     "ctaLink": "/random/link/to/no/where"
-}]
+}];
+
+describe('ListingPage', () => {
+    describe('@render', () => {
+        test('has error message', () => {
+            const error = {
+                message: "Test error"
+            };
+            const component = shallow(<ListingPage error={error} />);
+            expect(component.find('.message')).toHaveLength(1);
+            expect(component.find('.message').text()).toEqual('Test error');
+        });
+
+        test('has loading message', () => {
+            const component = shallow(<ListingPage isLoading={true} />);
+            expect(component.find('.message')).toHaveLength(1);
+            expect(component.find('.message').text()).toEqual('Loading ...');
+        });
+
+        test('has listing items and hides loading', () => {
+            const component = shallow(<ListingPage data={products}/>);
+            expect(component.find('.message')).toHaveLength(0);
+            expect(component.find('.ListingPage').children()).toHaveLength(4);
+        });
+    });
+});

@@ -5,7 +5,7 @@ export default (app) => {
     app.get('/api/products', (req, res) => {
         fs.readFile((path.resolve(__dirname, './products.json')), (err, resp) => {
             if (err) {
-                res.send(500, 'Something went wrong');
+                res.status(500).send('Something went wrong');
             }
 
             res.send(resp);
