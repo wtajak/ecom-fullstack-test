@@ -1,4 +1,39 @@
 body {
+    padding: 0;
+    margin: 5px;
     background-color: #FFFFFF;
     color: #888888;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ListingPage {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 480px) {
+  .ListingPage {
+    flex-flow: row wrap;
+
+    & .ListingPageItem {
+      box-sizing: border-box;
+      flex: 1;
+      flex-shrink: 0;
+      flex-grow: 1;
+      min-width: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ListingPage {
+    flex-flow: row wrap;
+
+    & .ListingPageItem {
+      min-width: 30%;
+      max-width: 31%;
+    }
+  }
 }
